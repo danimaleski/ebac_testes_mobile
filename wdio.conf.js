@@ -14,6 +14,7 @@ export const config = {
     // port: 443,
     // baseUrl: 'wd/hub',
    
+    
     specs: [
         './test/specs/**/*.js'
     ],
@@ -46,6 +47,7 @@ export const config = {
         'appium:app': `${process.cwd()}/app/ebacshop.apks`,
         'appium:appWaitActivity': '.MainActivity',
         'appium:disableIdLocatorAutocompletion': true
+        
     }
 ],
     logLevel: 'info',
@@ -58,6 +60,7 @@ export const config = {
             outputDir: 'allure-results',
             disableWebdriverStepsReporting: true,
             disableWebdriverScreenshotsReporting: true, //colocar falso caso queira tirar print dos testes.
+    
         }]
     ],
     mochaOpts: {
@@ -78,4 +81,3 @@ export const config = {
 //allure-report cria uma pasta com todo o html
 //npx allure generate allure-results
 //npx allure open (com o html final gerado)
-
